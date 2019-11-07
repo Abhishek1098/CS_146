@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <title>CS146 Assignment 3</title>
+      <link rel="stylesheet" type="text/css" href="assets/hw3_helper.css" />
+   </head>
+
+   <body>
+      <header>
+         <h1>CS146 Assignment 3</h1>
+         <h2>JavaScript Calculator</h2>
+      </header>
+
+      <div class="container">
+         <div class="calc">
+            <div class="display" id="output"></div>
+            <button onclick="pressNum(7)">7</button>
+            <button onclick="pressNum(8)">8</button>
+            <button onclick="pressNum(9)">9</button>
+            <button class="operation" onclick="pressOp('*')">&times;</button>
+            <button onclick="pressNum(4)">4</button>
+            <button onclick="pressNum(5)">5</button>
+            <button onclick="pressNum(6)">6</button>
+            <button class="operation" onclick="pressOp('/')">&divide;</button>
+            <button onclick="pressNum(1)">1</button>
+            <button onclick="pressNum(2)">2</button>
+            <button onclick="pressNum(3)">3</button>
+            <button class="operation" onclick="pressOp('-')">&minus;</button>
+            <button class="operation-alt reset" onclick="resetCalc()">
+               Reset
+            </button>
+            <button onclick="pressNum(0)">0</button>
+            <button class="operation-alt" onclick="pressEquals()">=</button>
+            <button class="operation" onclick="pressOp('+')">+</button>
+         </div>
+      </div>
+
+      <script src="assets/hw3_helper.js"></script>
+      <script src="solution.js"></script>
+   </body>
+</html>

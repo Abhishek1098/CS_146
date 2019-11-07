@@ -1,0 +1,131 @@
+/* Do not edit or turn in this file! You will only be editing the style.css file! */
+
+header {
+   text-align: center;
+   margin: 16px 0;
+}
+
+h1,
+h2 {
+   margin: 0;
+}
+
+h2 {
+   color: #444;
+   font-weight: normal;
+}
+
+body,
+html {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-color: #ddd;
+   /* System Font Stack */
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+      Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+.calc {
+   background-color: #222;
+   display: inline-grid;
+   font-family: sans-serif;
+   grid-column-gap: 10px;
+   grid-row-gap: 10px;
+   grid-template-columns: repeat(4, 100px);
+   grid-template-rows: repeat(5, 100px);
+   padding: 10px;
+}
+
+.container {
+   margin: 0 auto;
+   width: 600px;
+   text-align: center;
+}
+
+.display {
+   align-items: center;
+   background-color: #6c6;
+   border-radius: 20px;
+   color: #262;
+   display: flex;
+   font-family: monospace;
+   font-size: 60px;
+   grid-column: 1 / 5;
+   justify-content: flex-end;
+   padding: 20px;
+   position: relative;
+   text-align: right;
+}
+
+.indicators {
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   font-size: 30px;
+   font-weight: bold;
+   justify-content: center;
+   left: 20px;
+   line-height: 1;
+   position: absolute;
+}
+
+button {
+   cursor: pointer;
+   background-color: #444;
+   border: none;
+   color: #fff;
+   font-size: 40px;
+   font-weight: bold;
+   transition: all 0.2s ease;
+}
+
+button:hover {
+   background-color: #555;
+   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+   transform: translateY(-2px);
+}
+
+button:active {
+   background-color: #fff;
+   color: #444;
+   transform: translateY(1px);
+}
+
+button:focus {
+   outline: none;
+}
+
+.reset {
+   text-transform: uppercase;
+   letter-spacing: 0.1rem;
+   font-size: 1.5rem;
+}
+
+.operation-alt {
+   background-color: #d62;
+}
+
+.operation-alt:hover {
+   background-color: #e84;
+}
+
+.operation-alt:active {
+   background-color: #fff;
+   color: #d62;
+}
+
+.operation {
+   background-color: #47a;
+}
+
+.operation:hover {
+   background-color: #69c;
+}
+
+.operation:active {
+   background-color: #fff;
+   color: #47a;
+}

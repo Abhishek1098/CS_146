@@ -1,0 +1,86 @@
+/*
+Abhishek Yadav
+I pledge my honor to follow the stevens honor code
+*/
+
+html{
+    text-align: center;
+}
+
+body{
+    background-color: grey;
+    display: inline-block;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th{
+    width: 100px;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
+    border-bottom-width: thin;
+}
+
+tr{
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
+    border-bottom-width: thin;
+}
+
+td {
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
+    border-bottom-width: thin; 
+}
+
+li {
+    list-style-type: square;
+}
+
+ul{
+    text-align: left;
+    list-style-type: square;
+    display: block;
+    
+}
+
+img{
+    width: 140px;
+    height: 140px;
+}
+
+.event {
+    color: white;
+    border-radius: 6px;
+}
+
+.event#david_sean {
+    background-color: red;
+}
+
+.event#rob_issac {
+    background-color: blue;
+}
+
+.event#tim_elliot {
+    background-color: green;
+}
+
+.event#jack_tom {
+    background-color: orange;
+}
+
+.content {
+    background-color: white;
+    margin: 16px, auto, 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding: 16px, auto;
+    box-shadow: 0px 0px 4px black;
+    border-radius: 4px;
+    width: 600px;
+}

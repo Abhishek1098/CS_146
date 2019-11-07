@@ -1,0 +1,50 @@
+<!-- Do not edit or turn in this file! You will only be editing the style.css file!-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CS146 Assignment 2</title>
+  <link rel="stylesheet" type="text/css" href="http://patrickhill.nyc/cs_146/hw2_assets/hw2_helper.css">
+  <script src="http://patrickhill.nyc/cs_146/hw2_assets/hw2_helper.js"></script>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta http-Equiv="Cache-Control" Content="no-cache" />
+  <meta http-Equiv="Pragma" Content="no-cache" />
+  <meta http-Equiv="Expires" Content="0" />
+</head>
+
+<body>
+  <header>
+    <h1>CS146 Assignment 2</h1>
+    <h2>Responsive CSS</h2>
+  </header>
+  <div class="container">
+    <div class="content">
+      <div class="page" id="phone">
+        <div class="page-label"></div>
+        <iframe name="phone" src="./assignment/page.html"></iframe>
+      </div>
+      <div class="page" id="tablet">
+        <div class="page-label"></div>
+        <iframe name="tablet" src="./assignment/page.html"></iframe>
+      </div>
+      <div class="page" id="desktop">
+        <div class="page-label"></div>
+        <iframe name="desktop" src="./assignment/page.html"></iframe>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div>
+      In this assignment you are writing CSS in <code>solution.css</code> to modify the style of the <code>page.html</code>
+      file. <b>Do not change any html.</b>
+      This file shows three different views of that <b>same html file</b> with different
+      widths. This should serve as an example for how you would
+      design cross-platform websites for phone, tablet, and desktop.
+    </div>
+  </footer>
+  <script>
+    [...document.getElementsByClassName('page')].forEach(e => e.children[0].innerText = `${e.id} | ${Math.floor(e.getBoundingClientRect().width)}px`)
+  </script>
+</body>
+
+</html>

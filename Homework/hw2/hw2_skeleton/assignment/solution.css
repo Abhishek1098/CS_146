@@ -1,0 +1,129 @@
+/* Put your solutions to the assignment here */
+body {
+    background-color: #eeeeee;
+}
+
+header {
+    background-color: #49516f;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h1 {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    color: white;
+}
+
+span{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.logo{
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-width: 5px;
+    color: white;
+}
+
+.posts{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post{
+    flex-grow: inherit; 
+}
+
+.post-body{
+    height: 200px;
+}
+
+.post-container{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    align-items: center;
+}
+
+.post-pic{
+    height: 200px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+@media only screen and (min-width:999px) {
+    .posts{
+        flex-direction: column;
+        align-items: center;
+    }
+    .post{
+        max-width: 800px;
+        flex-grow: inherit;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:999px) and (min-width:400px) {
+    header{
+        justify-content: center;
+    }
+    .posts{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .post-container{
+        flex-direction: column;
+    }
+    .post{
+        width: 50%;
+    }
+    .post-pic{
+        width: 100px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width:399px) {
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo{
+        border-radius: 50%;
+    }
+    .posts{
+        flex-basis: auto;
+        flex-direction: column;
+    }
+    .post-container{
+        flex-direction: column;
+    }
+    .post-pic{
+        width: 100%;
+        height: auto;
+    }
+}
